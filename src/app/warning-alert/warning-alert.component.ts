@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./warning-alert.component.css']
 })
 export class WarningAlertComponent {
+ type = 2;
+ message = 'Danger';
 
+ getMessage() { return this.message};
 }
