@@ -10,7 +10,13 @@ export class AppComponent {
 
   isButtonActive = false;
 
+  onClickStatus = 'Button Is Untouched';
+
   constructor() {
     setTimeout(() => this.isButtonActive = true, 5000);
+  }
+
+  onClick = () => {
+    this.onClickStatus = 'Button Is Clicked'
   }
 }
