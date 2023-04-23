@@ -12,11 +12,17 @@ export class AppComponent {
 
   onClickStatus = 'Button Is Untouched';
 
+  inputText = '';
+
   constructor() {
     setTimeout(() => this.isButtonActive = true, 5000);
   }
 
   onClick = () => {
     this.onClickStatus = 'Button Is Clicked'
+  }
+
+  onUserInput = (event: Event) => {
+    this.inputText = (<HTMLInputElement>event.target).value;
   }
 }
