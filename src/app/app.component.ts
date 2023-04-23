@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'In App Component';
+
+  isButtonActive = false;
+
+  constructor() {
+    setTimeout(() => this.isButtonActive = true, 5000);
+  }
 }
