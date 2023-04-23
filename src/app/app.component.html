@@ -12,6 +12,9 @@
             <p>{{inputText}}</p>
             <p>{{onClickStatus}}</p>
             <button class="btn btn-outline-primary" [disabled]="!isButtonActive" (click)="onClick()">Add Alert Component</button>
+            <hr>
+            <p *ngIf="isButtonActive; else elseElement">Button is Active</p>
+            <ng-template #elseElement>Button is Not Active</ng-template>
         </div>
     </div>
 </div>
