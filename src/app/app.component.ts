@@ -25,4 +25,8 @@ export class AppComponent {
   onUserInput = (event: Event) => {
     this.inputText = (<HTMLInputElement>event.target).value;
   }
+
+  getColor() {
+    return this.isButtonActive ? 'green' : 'red';
+  }
 }
