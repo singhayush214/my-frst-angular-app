@@ -15,7 +15,7 @@
             <hr>
             <p *ngIf="isButtonActive; else elseElement">Button is Active</p>
             <ng-template #elseElement>Button is Not Active</ng-template>
-            <p [ngStyle]="{backgroundColor: getColor()}">Status</p>
+            <p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{greenColor: getColor() === 'green'}">Status</p>
         </div>
     </div>
 </div>
